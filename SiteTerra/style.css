@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   margin: 0;
@@ -6,6 +10,7 @@ body {
 
 html, body {
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* HERO */
@@ -170,15 +175,21 @@ html, body {
   justify-content: center;
 }
 
-.title {
+.title{
   font-family: 'Krona One', sans-serif;
+  font-size: 2.6rem;
 }
 
-.big-text {
+.big-text{
   font-family: 'Krona One', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
-  max-width: 700px;
+  max-width: 750px;
+}
+
+.big-text span{
+  color: #0b0b0b;
+  font-weight: 600;
 }
 
 .small-text {
@@ -278,11 +289,11 @@ html, body {
   }
 
   .hero h1{
-    font-size: 2.5rem;
+  font-size: 4.5rem;
   }
 
   .hero .lead{
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .cardblue{
@@ -330,7 +341,10 @@ html, body {
   height: 100vh;
   background: rgba(93,172,242,.97);
   backdrop-filter: blur(15px);
+  transition: right 0.3s ease;
+  z-index: 2000;
 }
+
 
 #sidebar.active{
   right: 0;
@@ -356,11 +370,13 @@ html, body {
   text-decoration: none;
   font-size: 18px;
   transition: .3s;
+  color: #fff;
+  font-weight: 500;
 }
 .menu-links a:hover{
   transform: translateX(5px);
+  color: #eaf6ff;
 }
-
 /* OVERLAY */
 #overlay{
   position: fixed;
@@ -399,4 +415,103 @@ html, body {
   filter: drop-shadow(
     0 15px 25px rgba(0,0,0,.15)
   );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sidebar {
+  z-index: 2000;
+}
+
+#arduino .title {
+  text-align: left;
+}
+
+@media (max-width: 768px){
+
+  .hero h1{
+    font-size: 2.4rem;
+  }
+
+  .hero .lead{
+    font-size: 1.1rem;
+  }
+
+  .title{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .big-text{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .section{
+    padding: 60px 20px;
+  }
+
+  .container-fluid{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* SIDEBAR MAIS USÁVEL NO CELULAR */
+  #sidebar{
+    width: 85%;
+  }
+
+  .menu-links a{
+    font-size: 20px;
+  }
+
+  /* REMOVE ELEMENTOS QUE QUEBRAM MOBILE */
+  .img-pessoa,
+  .img-pessoa1,
+  .img-flor,
+  .img-flor1,
+  .img-peça,
+  .img-peça1{
+    display: none;
+  }
+}
+
+/* FOOTER */
+#footer-site{
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.08);
+  margin-top: 60px;
+}
+
+/* textos */
+.footer-title{
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.footer-text{
+  font-size: 0.95rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* responsivo */
+@media (max-width: 768px){
+  #footer-site{
+    text-align: center;
+  }
+
+  .footer-right{
+    margin-top: 15px;
+  }
+
+  .footer-center{
+    margin-top: 15px;
+  }
 }
