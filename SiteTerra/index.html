@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Brasil Tagarela</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+  
+  <!-- OVERLAY -->
+<div id="overlay"></div>
+
+<!-- MENU LATERAL -->
+<aside id="sidebar">
+
+  <button id="closeMenu" class="close-btn">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <nav class="menu-links">
+    <a href="#">Tela inicial</a>
+    <a href="#">Criadores</a>
+    <a href="#">Saiba mais sobre o tema</a>
+    <a href="#">Projeto Final</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</aside>
+
+<!-- HEADER FIXO -->
+<header id="header-fixed" class="bg-white shadow-sm">
+  <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-4">
+    
+    <div class="d-flex align-items-center gap-2">
+      <img src="./Images/logo.png" class="logo-img" alt="Logo">
+      <span class="logo-text-dark">Brasil Tagarela</span>
+    </div>
+
+   <button class="menu-btn menu-btn" id="openMenuHeader">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero d-flex flex-column justify-content-between">
+
+  <!-- Header da Hero -->
+ <div class="container-fluid py-3 px-4">
+  <div class="d-flex justify-content-between align-items-center">
+
+    <!-- ESQUERDA -->
+    <div class="d-flex align-items-center gap-2">
+      <img src="./Images/logo.png" class="logo-img">
+      <span class="logo-text-dark">Brasil Tagarela</span>
+    </div>
+
+    <!-- DIREITA -->
+    <button class="menu-btn2" id="openMenuHero">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  </div>
+</div>
+  <!-- Conteúdo -->
+  <div class="container text-center">
+    <h1 class="display-4">Venha conhecer o nosso projeto!</h1>
+    <p class="lead">
+      Brasil Tagarela, um projeto focado no aprendizado de crianças com deficiência visual.
+    </p>
+    <button class="btng btn btn-success">Criadores</button>
+    <img src="./Images/pessoam.png" class="img-pessoa1" alt="">
+    <img src="./Images/pessoam.png" class="img-pessoa" alt="">
+    <img src="./Images/flor.png" class="img-flor1" alt="">
+    <img src="./Images/flor.png" class="img-flor" alt="">
+    <img src="./Images/peça.png" class="img-peça1" alt="">
+    <img src="./Images/peça.png" class="img-peça" alt="">
+  </div>
+
+  <!-- Card -->
+  <div class="container mb-4 ">
+    <div class="cardblue card text-white" style="background:#1e5f99;">
+      <div class="fontheader card-header">Resultado final</div>
+      <div class="card-body bg-light" style="height:250px;"></div>
+    </div>
+  </div>
+
+</section>  
+
+<!-- OBJETIVO -->
+<section class="section green">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+
+      <!-- TEXTO -->
+      <div class="col-md-6 text-content">
+        <h2 class="title">Objetivo</h2>
+
+        <p class="big-text">
+          O propósito central do projeto <strong>“Terra à Vista!”</strong> é <span style="color:black">apoiar e enriquecer</span> a aprendizagem de crianças com deficiência visual na área de Geografia.
+          Por meio do nosso mapa tátil, os alunos conseguem tocar, sentir e construir uma imagem mental clara do formato de cada estado brasileiro, potencializando a <span style="color:black">fixação</span> de diversos conteúdos escolares.
+          Para complementar essa experiência, a extensão sonora adiciona uma camada extra de acessibilidade, permitindo que as crianças explorem o conteúdo com total autonomia, de forma simples, inclusiva e interativa.
+        </p>
+      </div>
+
+      <!-- IMAGENS -->
+      <div class="col-md-6 position-relative p-0">
+        <div class="img-wrapper-custom">
+          <img src="./Images/papel.png" class="img-paper" alt="Fundo">
+          <img src="./Images/imagemobj.png" class="img-main" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTO -->
+<section class="section red">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+
+      <!-- TEXTO -->
+   <div class="col-md-6 text-content">
+        <h2 class="title">Produto</h2>
+
+        <p class="big-text">
+         Desenvolvido através de impressão 3D, o mapa da região Sul do Brasil une o <span style="color:black">tato</span> e a <span style="color:black">voz</span> para guiar o aprendizado. 
+         Cada estado possui um sistema de som integrado que aborda conteúdos de Economia, Demografia,
+          Aspectos Físicos e Cultura. Através de um botão estilo menu, a própria criança seleciona o tema que quer explorar. 
+          Para complementar a experiência de forma acessível,<span style="color:black">incluímos as siglas de cada estado em Braille</span> e marcações 
+          de identificação tátil, facilitando a fixação do conteúdo.
+        </p>
+      </div>
+
+      <div class="col-md-6 position-relative p-0">
+        <div class="img-wrapper">
+          <img src="./Images/imagemprdt.png" class="img-sc" alt="">
+          <img src="./Images/trempng.png" class="img-trem" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="section yellow">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-content">
+        <h2 class="title" style="color:black">Processo de criação</h2>
+        <p class="big-text"style="color:black">
+          O trabalho começou com a <span style="color:#053A68">adaptação dos modelos digitais</span> em 3D dos estados do Sul do Brasil
+          , ajustando cada detalhe para atender perfeitamente às necessidades de <span style="color:#053A68">acessibilidade</span> do projeto.
+           Com os modelos validados, partimos para a etapa de impressão 3D, realizando testes e ajustes finos 
+           até alcançar a precisão e a textura tátil ideais. Com a estrutura física pronta, o próximo passo foi
+            dar vida ao mapa através da tecnologia, iniciando a criação do sistema de som integrado com Arduino.
+</p>
+      </div>
+
+      <div class="col-md-6 position-relative p-0">
+        <img src="./Images/projeto.png" class="img-pca" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO 2 -->
+<section class="section orange">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-content">
+        <h2 class="title">O sistema de Arduino</h2>
+        <p class="big-text">O sistema de áudio funciona através da placa <span style="color:black">Arduino UNO,</span>
+          que atua como o controlador central do projeto. Ela se conecta a um leitor de <span style="color:black">cartão SD</span>, 
+          onde ficam armazenados todos os arquivos de voz do mapa.
+          Para o controle dos comandos, integramos quatro botões (push buttons) na estrutura: 
+          três deles ficam posicionados logo acima da impressão dos estados do Sul, e o quarto fica fixado na caixa do projeto,
+          funcionando como um Menu para que o usuário selecione o tema que deseja ouvir.
+</p>
+      </div>
+
+      <div class="col-md-6 position-relative p-0">
+        <img src="./Images/projeto.png" class="img-pca" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SOBRE -->
+<section class="section purple text-center">
+  <div class="container-fluid px-5">
+    <h2 class="title">O sistema de Arduino</h2>
+    <p class="big-text">O resultado do projeto é uma caixa de MDF pintada à mão, que serve de base para os estados impressos em 3D, fixados com um distanciamento estratégico para facilitar o <span style="color:black">reconhecimento tátil</span>.
+Na parte direita da tampa fica o botão "Menu". O funcionamento do sistema é totalmente baseado na quantidade de cliques:<br>
+<span style="color:black">1 clique:</span> Ativa o sistema e reproduz uma mensagem de apresentação.<br>
+<span style="color:black">2 cliques:</span> Seleciona o tema Economia.<br>
+<span style="color:black">3 cliques:</span> Seleciona o tema Aspectos Físicos.<br>
+<span style="color:black">4 cliques:</span> Seleciona o tema Demografia.<br>
+Depois de escolher o tema no menu, basta a criança tocar e pressionar o estado desejado para que o mapa inicie a reprodução do áudio com as informações daquela região.</p><br>
+  </div>
+   <div class="col-md-6 position-relative p-0">
+        <img src="./Images/arduino.png" class="img-pca" alt="" width="50px" height="800px">
+      </div>
+</section>
+
+<section class="hero d-flex flex-column justify-content-center py-5">
+
+    <div class="container text-center">
+
+        <h2 class="title">Confira algumas fotos do processo de criação</h2>
+        <div id="arduinoCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel">
+
+            <div class="carousel-inner rounded-4 shadow">
+
+                <div class="carousel-item active">
+                    <img src="./Images/carrosel (1).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./Images/carrosel (2).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./Images/carrosel (3).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./Images/carrosel (4).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./Images/carrosel (5).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./Images/carrosel (6).jpg" class="d-block w-100 carousel-img">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#arduinoCarousel"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#arduinoCarousel"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section green">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+
+      <!-- TEXTO -->
+      <div class="col-md-6 text-content">
+        <h2 class="title">Quem somos?</h2>
+
+        <p class="big-text">
+          Somos estudantes do módulo 7 do Instituto Federal de Santa Catarina, Câmpus Chapecó.<br>
+          Nosso projeto foi desenvolvido também para os componentes curriculares Tecnologias Assistivas e Oficina de Integração IV.<br>
+          Estudantes:<br>
+
+          Arthur Felipe Lucatelli Ellen Jenifer Machado Ewerton do Santoss de Lima<br>
+
+
+          Professores:
+
+          Lara Miguel Debarba
+
+          Paulo Furtado
+        </p>
+      </div>
+
+      <!-- IMAGENS -->
+      <div class="col-md-6 position-relative p-0">
+        <div class="img-wrapper-custom">
+          <img src="./Images/papel.png" class="img-paper" alt="Fundo">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPT -->
+<script>
+  const header = document.getElementById("header-fixed");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      header.classList.add("show");
+    } else {
+      header.classList.remove("show");
+    }
+  });
+
+  // MENU
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+
+  const openMenuHeader = document.getElementById("openMenuHeader");
+  const openMenuHero = document.getElementById("openMenuHero");
+  const closeMenu = document.getElementById("closeMenu");
+
+  function openMenu() {
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
+  }
+
+  function closeMenuFn() {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  openMenuHeader.addEventListener("click", openMenu);
+  openMenuHero.addEventListener("click", openMenu);
+  closeMenu.addEventListener("click", closeMenuFn);
+  overlay.addEventListener("click", closeMenuFn);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
